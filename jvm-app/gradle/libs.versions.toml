@@ -1,0 +1,17 @@
+[versions]
+jdk = "8"
+groovy = "3.0.18"
+codenarc = "3.3.0"
+
+[plugins]
+git-publish = "org.ajoberstar.git-publish:3.0.1" # max for jdk8
+pages = "com.hendraanggrian.pages:0.1"
+
+[libraries]
+# lint
+codenarc = { module = "org.codenarc:CodeNarc", version.ref = "codenarc" }
+rulebook-codenarc = "com.hendraanggrian.rulebook:rulebook-checkstyle:0.3"
+# main
+groovy = { module = "org.codehaus.groovy:groovy-all", version.ref = "groovy" }
+# test
+truth = "com.google.truth:truth:1.1.5"
