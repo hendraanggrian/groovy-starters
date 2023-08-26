@@ -9,7 +9,7 @@ plugins {
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(libs.versions.jdk.get()))
 
-application.mainClass.set("$RELEASE_GROUP.app.MyApp")
+application.mainClass.set("$RELEASE_GROUP.app.App")
 
 codenarc {
     toolVersion = libs.versions.codenarc.get()

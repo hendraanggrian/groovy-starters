@@ -1,3 +1,5 @@
+val RELEASE_ARTIFACT: String by project
+
 plugins {
     groovy
     codenarc
@@ -9,6 +11,7 @@ dependencies {
     codenarc(libs.codenarc)
     // codenarc(libs.rulebook.codenarc)
 
+    implementation(project(":$RELEASE_ARTIFACT"))
     implementation(libs.groovy)
 
     testImplementation(libs.truth)
