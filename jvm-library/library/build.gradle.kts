@@ -6,7 +6,6 @@ plugins {
 }
 
 dependencies {
-    codenarc(libs.codenarc)
     // codenarc(libs.rulebook.codenarc)
 
     implementation(libs.groovy)

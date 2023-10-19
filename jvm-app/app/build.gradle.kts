@@ -1,4 +1,4 @@
-val RELEASE_GROUP: String by project
+val releaseGroup: String by project
 
 plugins {
     groovy
@@ -9,7 +9,7 @@ plugins {
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(libs.versions.jdk.get()))
 
-application.mainClass.set("$RELEASE_GROUP.app.App")
+application.mainClass.set("$releaseGroup.app.App")
 
 codenarc {
     toolVersion = libs.versions.codenarc.get()
@@ -17,7 +17,6 @@ codenarc {
 }
 
 dependencies {
-    codenarc(libs.codenarc)
     // codenarc(libs.rulebook.codenarc)
 
     implementation(libs.groovy)

@@ -1,4 +1,4 @@
-val RELEASE_ARTIFACT: String by project
+val releaseArtifact: String by project
 
 plugins {
     groovy
@@ -9,6 +9,6 @@ application.mainClass.set("com.example.App")
 
 dependencies {
     implementation(libs.groovy)
-    implementation(project(":$RELEASE_ARTIFACT"))
-    implementation(project(":$RELEASE_ARTIFACT-extension"))
+    implementation(project(":$releaseArtifact"))
+    implementation(project(":$releaseArtifact-extension"))
 }
