@@ -17,7 +17,7 @@ codenarc {
 }
 
 dependencies {
-    // codenarc(libs.rulebook.codenarc)
+    codenarc(libs.rulebook.codenarc)
 
     implementation(libs.groovy)
 

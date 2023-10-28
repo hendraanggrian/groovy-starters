@@ -8,7 +8,7 @@ plugins {
 }
 
 dependencies {
-    // codenarc(libs.rulebook.codenarc)
+    codenarc(libs.rulebook.codenarc)
 
     implementation(project(":$releaseArtifact"))
     implementation(libs.groovy)

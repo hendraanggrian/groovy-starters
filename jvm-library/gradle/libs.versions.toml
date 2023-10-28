@@ -10,8 +10,7 @@ pages = "com.hendraanggrian.pages:0.1"
 
 [libraries]
 # lint
-codenarc = { module = "org.codenarc:CodeNarc", version.ref = "codenarc" }
-rulebook-codenarc = "com.hendraanggrian.rulebook:rulebook-checkstyle:0.3"
+rulebook-codenarc = "com.hendraanggrian.rulebook:rulebook-codenarc:0.4"
 # main
 groovy = { module = "org.codehaus.groovy:groovy-all", version.ref = "groovy" }
 # test
